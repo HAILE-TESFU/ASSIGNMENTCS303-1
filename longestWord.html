@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Find the longest word length</title>
+        <script>
+             function islongestWordLength(arr){
+
+                    let arrayword=arr;
+                    //let wordlength=0;
+                   return arrayword.length;
+             }
+            function findLongestWord(){
+                let array=["civilEngineering","maharishi","computerScience","MasterSoftwareDevelopment","economics","physics"];
+
+                let longestWordLength=0;
+
+                for(let i=0;i<array.length;i++){
+                    islongestWordLength(array[i]);
+                    if(longestWordLength<islongestWordLength(array[i])){
+                        longestWordLength=islongestWordLength(array[i]);
+                    }
+                }
+                console.log(longestWordLength);
+           }
+
+          
+    findLongestWord();
+
+        </script>
+    </head>
+</html>
+
+
+

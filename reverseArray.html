@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>RVERSE AN ARRAY</title>
+        <script>
+            function reverseArray(array){
+                //INPUT:THE GIVEN ARRAY arrayValue=[1,2,3,4,5,6,7,8,9,10]; IS THE INPUT.
+                //PROCESSING:THE PROCESS OF REVERSING USING FOR LOOP IS THE PROCESSING.
+                //OUTPUT: THE REVERSED ARRAY IS THE OUT PUT.
+
+                let reverseArray=array;
+                for(let i=0;i<Math.floor(reverseArray.length/2);i++){
+                    let temp=reverseArray[i];
+                    reverseArray[i]=reverseArray[reverseArray.length-(1+i)];
+                   reverseArray[reverseArray.length-(1+i)]=temp;
+                }
+                return reverseArray;
+
+            }
+           console.log(reverseArray(["A","B","C","D","E","F"]));
+           "<br>"
+        function reverseArrayInPlace(arrayValue){
+            //INPUT:THE GIVEN ARRAY arrayValue=[1,2,3,4,5,6,7,8,9,10]; IS THE INPUT.
+            //PROCESSING:THE PROCESS OF REVERSING USING FOR LOOP IS THE PROCESSING.
+            //OUTPUT: THE REVERSED ARRAY IS THE OUT PUT.
+
+             arrayValue=[1,2,3,4,5,6,7,8,9,10];
+
+            for(let i=0;i<Math.floor(arrayValue.length/2);i++){
+                    let temp=arrayValue[i];
+                    arrayValue[i]=arrayValue[arrayValue.length-(1+i)];
+                   arrayValue[arrayValue.length-(1+i)]=temp;
+                }
+               console.log(arrayValue);
+
+        }
+        reverseArrayInPlace();
+
+            
+        </script>
+    </head>
+</html>
+
