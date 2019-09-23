@@ -13,10 +13,11 @@
             let maximumNumber = a;
             if (maximumNumber < b) {
                 maximumNumber = b;
-            }
-            else if (maximumNumber < c) {
+                if (maximumNumber < c) {
                 maximumNumber = c;
+              }
             }
+      
             console.log(maximumNumber);
         }
         maxOfThree(7, 6, 5);
